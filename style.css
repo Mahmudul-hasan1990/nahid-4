@@ -1,0 +1,353 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+body {
+    max-width: 1920px;
+}
+/* Header section */
+ header{
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.1);
+ }
+ nav {
+    padding: 50px 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ nav ul {
+    height: 26px;
+    width: 450px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    list-style: none;
+ }
+
+ .heading{
+    margin: auto;
+    height: 300px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .heading button{
+    height: 40px;
+    width: 180px;
+    background: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 5px;
+ }
+ .header-image{
+    margin: auto;
+    height: 800px;
+    width: 1600px;
+    overflow: hidden;
+
+ }
+ .header-image img {
+    height: 750px;
+    width: 1550px;
+ }
+
+ /* section blog */
+ .blog {
+    height: 950px;
+    max-width: 1920px;
+    padding: 85px 307px;
+    display: grid;
+    grid-template-columns: 720px 537px;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .blog-img{
+    display: grid;
+    grid-template-columns: repeat(2, 322px);
+    gap: 24px;
+    border-radius: 8px;
+ }
+ .blog-img img {
+    height: 320px;
+    width: 320px;
+ }
+ .blog-feature {
+    width: 537px;
+    height: 304px;
+ }
+.blog-feature button {
+    height: 40px;
+    width: 180px;
+    background: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 5px;
+}
+
+/* section love */
+.blog-love {
+    height: 1150px;
+    max-width: 1920px;
+}
+.blog-love-main{
+    height: 1050px;
+    width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.love-feature {
+    height: 982px;
+    width: 586px;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+.love-img {
+    position: relative;
+    height: 1059px;
+    width: 800px;
+    padding-left: 80px;
+}
+
+.love-feature div{
+    height: 171px;
+    width: 586px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.love-feature div h5{
+    font-size: 25px;
+    padding: 20px;
+}
+.love-feature div p {
+    font-size:20px ;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.year{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: -10px;
+    top: 920px;
+    padding-top: 5px;
+    text-align: center;
+    background: #FF900E;
+    border-radius: 8px;
+}
+.year h1{
+    font-size: 30px;
+}
+.year span{
+    font-size: 20px;
+}
+.some-facts{
+    width: 550px;
+    height: 100px;
+    margin-left: 240px;
+}
+.some-facts h1 {
+    padding-bottom: 12px;
+}
+/* award */
+.award{
+    position: relative;
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    overflow: hidden;
+}
+.award div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+    width: 250px;
+    background-color: white
+}
+.award div::before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 100px;
+    background: linear-gradient( 45deg,blue, red);
+    animation: anmation 5s linear infinite;
+}
+.award div::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    inset: 8px;
+}
+
+.award div ul li {
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    zoom: 50;
+}
+.glow ul li{
+    position: relative;
+    z-index: 50;
+}
+.award-1{
+    overflow: hidden;
+    height: 210px;
+    width: 260px;
+    border-radius: 5px;
+}
+@keyframes anmation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* our sponspors */
+.our-spon {
+    margin: auto;
+    height: 80px;
+    width: 550px;
+    text-align: center;
+}
+/* png  */
+.png{
+    margin: 90px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.png div img {
+    height: 60px;
+    width: 180px;
+}
+/* footer  */
+footer{
+    width: 1920px;
+    height: 100px;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+    background: rgba(255, 244, 231, 1);
+}
+/* address */
+.adress{
+    height: 200px;
+    width: 1450x;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: bisque;
+}
+.adress h1 {
+    font-size: 30px;
+    padding: 5px;
+}
+.adress p {
+    padding: 5px;
+}
+@media only screen and ( max-width:576px) {
+    header {
+        height: 950px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h2 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .heading {
+        width: 576px;
+    }
+    .header-image {
+        display: flex;
+        justify-content: center;
+        width: 576px;
+        height: 420px;
+    }
+    .header-image img {
+        width: 500px;
+        height: 400px;
+    }
+    .blog {
+        height: 1700px;
+        max-width: 576;
+        grid-template-columns: 550px;
+    }
+    .blog-img{
+        grid-template-columns: 500px;
+    }
+    .blog-img img {
+        width: 500px;
+    }
+    .blog-feature{
+        margin-top: 10px;
+    }
+    .blog-love{
+        height: 2000px;
+        max-width: 576px;
+    }
+    .blog-love-main{
+        width: 450px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .love-feature {
+        width: 500px;
+        margin: 5px;
+
+    }
+    .love-feature div {
+        width:500px;
+    }
+    .blog-love-main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .love-img {
+        width: 576px;
+        padding-left: 0;
+    }
+    .year{
+        top: 850px;
+        left: 200px;
+    }
+    .some-facts{
+        margin-left: 10px;
+    }
+    .award{
+        flex-direction: column;
+        align-items: center;
+    }
+    .png{
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .adress{
+        flex-direction: column-reverse;
+        height: 300px;
+        width: 576px;
+        text-align: center;
+    }
+    footer {
+        width: 576px;
+        padding: 39px 0;
+    }
+}
